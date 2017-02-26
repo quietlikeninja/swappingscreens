@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		43705A4C1E626F700015E9A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43705A4B1E626F700015E9A4 /* AppDelegate.swift */; };
-		43705A4E1E626F700015E9A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43705A4D1E626F700015E9A4 /* ViewController.swift */; };
+		43705A4E1E626F700015E9A4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43705A4D1E626F700015E9A4 /* LoginVC.swift */; };
 		43705A511E626F700015E9A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43705A4F1E626F700015E9A4 /* Main.storyboard */; };
 		43705A531E626F700015E9A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43705A521E626F700015E9A4 /* Assets.xcassets */; };
 		43705A561E626F700015E9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43705A541E626F700015E9A4 /* LaunchScreen.storyboard */; };
 		43705A611E626F710015E9A4 /* SwappingScreensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43705A601E626F710015E9A4 /* SwappingScreensTests.swift */; };
 		43705A6C1E626F710015E9A4 /* SwappingScreensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43705A6B1E626F710015E9A4 /* SwappingScreensUITests.swift */; };
+		43705A7A1E6270F30015E9A4 /* MusicListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43705A791E6270F30015E9A4 /* MusicListVC.swift */; };
+		43705A7C1E6277B40015E9A4 /* PlaySongVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43705A7B1E6277B40015E9A4 /* PlaySongVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		43705A481E626F700015E9A4 /* SwappingScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwappingScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43705A4B1E626F700015E9A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43705A4D1E626F700015E9A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43705A4D1E626F700015E9A4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		43705A501E626F700015E9A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43705A521E626F700015E9A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43705A551E626F700015E9A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		43705A671E626F710015E9A4 /* SwappingScreensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwappingScreensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43705A6B1E626F710015E9A4 /* SwappingScreensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwappingScreensUITests.swift; sourceTree = "<group>"; };
 		43705A6D1E626F710015E9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43705A791E6270F30015E9A4 /* MusicListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListVC.swift; sourceTree = "<group>"; };
+		43705A7B1E6277B40015E9A4 /* PlaySongVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				43705A4B1E626F700015E9A4 /* AppDelegate.swift */,
-				43705A4D1E626F700015E9A4 /* ViewController.swift */,
+				43705A4D1E626F700015E9A4 /* LoginVC.swift */,
 				43705A4F1E626F700015E9A4 /* Main.storyboard */,
 				43705A521E626F700015E9A4 /* Assets.xcassets */,
 				43705A541E626F700015E9A4 /* LaunchScreen.storyboard */,
 				43705A571E626F700015E9A4 /* Info.plist */,
+				43705A791E6270F30015E9A4 /* MusicListVC.swift */,
+				43705A7B1E6277B40015E9A4 /* PlaySongVC.swift */,
 			);
 			path = SwappingScreens;
 			sourceTree = "<group>";
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43705A4E1E626F700015E9A4 /* ViewController.swift in Sources */,
+				43705A4E1E626F700015E9A4 /* LoginVC.swift in Sources */,
+				43705A7C1E6277B40015E9A4 /* PlaySongVC.swift in Sources */,
+				43705A7A1E6270F30015E9A4 /* MusicListVC.swift in Sources */,
 				43705A4C1E626F700015E9A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
